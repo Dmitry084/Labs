@@ -35,6 +35,7 @@
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
+            id = new DataGridViewTextBoxColumn();
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
             dateTimePicker1 = new DateTimePicker();
@@ -50,6 +51,7 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -58,7 +60,7 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column6, Column3, Column4, Column5 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column6, Column3, Column4, Column5, id });
             dataGridView1.Location = new Point(12, 12);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -116,6 +118,15 @@
             Column5.ReadOnly = true;
             Column5.Width = 150;
             // 
+            // id
+            // 
+            id.HeaderText = "id";
+            id.MinimumWidth = 6;
+            id.Name = "id";
+            id.ReadOnly = true;
+            id.Visible = false;
+            id.Width = 125;
+            // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
@@ -142,7 +153,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(999, 449);
+            button1.Location = new Point(1059, 449);
             button1.Name = "button1";
             button1.Size = new Size(127, 46);
             button1.TabIndex = 4;
@@ -152,7 +163,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(999, 508);
+            button2.Location = new Point(1059, 501);
             button2.Name = "button2";
             button2.Size = new Size(127, 46);
             button2.TabIndex = 5;
@@ -162,7 +173,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(999, 568);
+            button3.Location = new Point(1059, 553);
             button3.Name = "button3";
             button3.Size = new Size(127, 46);
             button3.TabIndex = 6;
@@ -246,11 +257,21 @@
             label6.TabIndex = 15;
             label6.Text = "№ группы";
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(1242, 613);
+            label7.Name = "label7";
+            label7.Size = new Size(0, 20);
+            label7.TabIndex = 16;
+            label7.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1278, 642);
+            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -292,11 +313,13 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private Label label7;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn id;
     }
 }

@@ -2,7 +2,7 @@ namespace Lab7
 {
     class Student
     {
-        //private int _id;
+        private int _id;
         private string _recordBook;
         private string _fullName;
         private string _departament;
@@ -10,7 +10,7 @@ namespace Lab7
         private string _dateOfAdmission;
         private string _group;
         
-        // public int id { get => _id; set => _id = value; } 
+        public int id { get => _id; set => _id = value; } 
         public string recordBook { get => _recordBook; set => _recordBook = value; }
         public string fullName { get => _fullName; set => _fullName = value; }
         public string departament  { get => _departament; set => _departament = value; }
