@@ -45,15 +45,16 @@ namespace lab9
         }
         private void loadfromtable(List<Student> students)
         {
+            int r = 1;
             try
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
                     var cells = row.Cells;
-                    Student s = new Student((string)cells["Column1"].Value, (string)cells["Column2"].Value, (string)cells["Column3"].Value);//row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString(),, row.Cells[3].Value.ToString()
-
+                    Student s = new Student((string)cells["Column1"].Value, (string)cells["Column2"].Value, (string)cells["Column3"].Value);
                     students.Add(s);
                 }
+
             }
             catch (Exception)
             {
