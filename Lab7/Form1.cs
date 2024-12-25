@@ -154,7 +154,6 @@ namespace Lab7
         {
             int r = 0;
             int parsedValue;
-            //string pattern = @"^[1-9]{3,}[а,б]?-[јЅ¬√ƒ≈®∆«»… ЋћЌќѕ–—“”‘’÷„ЎўЏџ№Ёёя]{2,}[о|з]{1}$";
             Regex regex = new Regex(@"^\d{3,4}[а,б]?-?[ј-я]{2}[о,з]$");
             if (textBox1.TextLength < 8)
             {
@@ -166,11 +165,6 @@ namespace Lab7
                 r = 1;
                 MessageBox.Show("Ќомер студенческого билета должен состо€ть только из цифр!");
             }
-            //if (Regex.IsMatch(textBox3.Text, pattern, RegexOptions.IgnoreCase))
-            //{
-
-            // }
-            // else
             if (!regex.IsMatch(textBox3.Text))
             {
                 r = 1;
@@ -226,6 +220,7 @@ namespace Lab7
             if (!int.TryParse(textBox1.Text, out parsedValue))
             {
                 r = 1;
+
                 MessageBox.Show("Ќомер студенческого билета должен состо€ть только из цифр!");
             }
 

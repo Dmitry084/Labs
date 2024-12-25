@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <_fullName>Тырин Дмитрий Алексеевич</_fullName>
+    <_recordBook>87686786</_recordBook>
+    <_specification>Прикладная информатика</_specification>
+    <fullName>Тырин Дмитрий Алексеевич</fullName>
+    <recordBook>87686786</recordBook>
+    <specification>Прикладная информатика</specification>
+  </Student>
+  <Student>
+    <_fullName>Перервин Илья Евгеньевич</_fullName>
+    <_recordBook>87686545</_recordBook>
+    <_specification>Прикладная информатика</_specification>
+    <fullName>Перервин Илья Евгеньевич</fullName>
+    <recordBook>87686545</recordBook>
+    <specification>Прикладная информатика</specification>
+  </Student>
+  <Student>
+    <_fullName>Кости Роман Русланович</_fullName>
+    <_recordBook>65676567</_recordBook>
+    <_specification>Математика и компьютерные науки</_specification>
+    <fullName>Кости Роман Русланович</fullName>
+    <recordBook>65676567</recordBook>
+    <specification>Математика и компьютерные науки</specification>
+  </Student>
+  <Student>
+    <_fullName>Иванов Иван Иванович</_fullName>
+    <_recordBook>53453453</_recordBook>
+    <_specification>Информационная безопасность</_specification>
+    <fullName>Иванов Иван Иванович</fullName>
+    <recordBook>53453453</recordBook>
+    <specification>Информационная безопасность</specification>
+  </Student>
+  <Student />
+</ArrayOfStudent>
